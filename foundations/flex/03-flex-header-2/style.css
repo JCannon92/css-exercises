@@ -12,6 +12,12 @@ body {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  display: flex;
+  justify-content: space-between;
+}
+
+.header * {
+  margin: 5px;
 }
 
 .profile-image {
@@ -37,6 +43,10 @@ button {
   padding: 8px 24px;
 }
 
+button.notifications {
+  height: 40px;
+}
+
 a {
   /* this removes the line under our links */
   text-decoration: none;
@@ -45,4 +55,22 @@ a {
 
 ul {
   list-style-type: none;
+  display: flex;
+  width: 400px;
+  gap: 20px;
+}
+
+.left-header,
+.right-header {
+  display: flex
+}
+
+.left-header {
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.right-header {
+  justify-content: flex-end;
+  align-items: center;
 }
